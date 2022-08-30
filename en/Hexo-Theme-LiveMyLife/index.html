@@ -6,7 +6,7 @@
   <!-- Google Analytics -->
   
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-30S6V0G7D2"></script>
     <script type="text/javascript">
       window.dataLayer = window.dataLayer || [];
 
@@ -15,22 +15,11 @@
       }
       gtag('js', new Date());
 
-      gtag('config', 'UA-xxxxxx-xx');
+      gtag('config', 'G-30S6V0G7D2');
     </script>
   
 
   <!-- Baidu Tongji -->
-  
-    <script type="text/javascript">
-      // Originial
-      var _hmt = _hmt || [];
-      (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-      })();
-    </script>
   
 
   <!-- Baidu Push -->
@@ -118,11 +107,6 @@
     
 
     
-      <!-- gitalk start -->
-      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
-      <link rel="stylesheet" href="/css/gitalk.css"/>
-      <!-- gitalk end -->
-    
   
 
   <!-- Custom Fonts -->
@@ -144,7 +128,7 @@
     
       Hexo-Theme-LiveMyLife - kazumi&#39;s personal website
     
-  </title>
+  </title><meta name="robots" content="noindex">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 
@@ -237,17 +221,6 @@
           
           
           <li>
-            <a href="/archive/">
-              
-              ARCHIVES
-              
-              
-            </a>
-          </li>
-          
-          
-          
-          <li>
             <a href="/about/">
               
               ABOUT
@@ -259,9 +232,9 @@
           
           
           <li>
-            <a href="/tags/">
+            <a href="/archive/">
               
-              TAGS
+              ARCHIVES
               
               
             </a>
@@ -279,6 +252,17 @@
           </li>
           
           
+          
+          <li>
+            <a href="/tags/">
+              
+              TAGS
+              
+              
+            </a>
+          </li>
+          
+          
 
           
           <li>
@@ -290,30 +274,6 @@
           <!-- LangSelect -->
           
           
-          
-          <!-- LangSelect start -->
-          <!-- LangSelect -->
-<li>
-  <a id="lang-select-label"><i class="fa fa-globe"></i>
-    <span>
-      English
-    </span>
-    <select id="lang-select" data-canonical="en/Hexo-Theme-LiveMyLife/">
-      
-      
-      <option value="en"  selected >
-        English
-      </option>
-      
-      <option value="tw" >
-        繁體中文
-      </option>
-      
-    </select>
-  </a>
-</li>
-
-          <!-- LangSelect end -->
           
           
           
@@ -478,6 +438,13 @@
 	) -->
 		<!-- Modify by Yu-Hsuan Yen -->
 <!-- Post Content -->
+<script src='https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'></script>
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({theme: 'forest'});
+  }
+</script>
+
 <article>
   <div class="container">
     <div class="row">
@@ -647,16 +614,12 @@ Gitee Repo: <a target="_blank" rel="noopener" href="https://gitee.com/V_Vincen/h
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new post <span class="string">&quot;&lt;post name&gt;&quot;</span>   <span class="comment"># you can change post to another layout if you want</span></span><br><span class="line">hexo clean &amp;&amp; hexo generate   <span class="comment"># generate the static file</span></span><br><span class="line">hexo server   <span class="comment"># run hexo in local environment</span></span><br><span class="line">hexo deploy   <span class="comment"># hexo will push the static files automatically into the specific branch(gh-pages) of your repo!</span></span><br></pre></td></tr></table></figure>
 <h2 id="Have-fun">Have fun ^_^</h2>
 <p>Please <a target="_blank" rel="noopener" href="https://github.com/V-Vincen/hexo-theme-livemylife">Star</a> this Project if you like it! <a target="_blank" rel="noopener" href="https://github.com/V-Vincen">Follow</a> would also be appreciated! Peace!</p>
-
+<!-- flag of hidden posts -->
 
         <hr>
         <!-- Pager -->
         <ul class="pager">
           
-          
-          <li class="next">
-            <a href="/cn/Hexo-Theme-LiveMyLife/" data-toggle="tooltip" data-placement="top" title="Hexo-Theme-LiveMyLife">Next Post &rarr;</a>
-          </li>
           
         </ul>
 
@@ -677,100 +640,10 @@ Gitee Repo: <a target="_blank" rel="noopener" href="https://gitee.com/V_Vincen/h
         
 
         
-        <!-- Sharing Srtart -->
-        <!-- Social Social Share Post -->
-<!-- Docs:https://github.com/overtrue/share.js -->
-
-<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
-  <ul class="list-inline text-center social-share-ul">
-    <li class="social-share-li">
-      <a target="_blank" class="social-share-icon icon-twitter">
-        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li class="social-share-li">
-      <a class="social-share-icon icon-wechat">
-        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li class="social-share-li">
-      <a target="_blank" class="social-share-icon icon-weibo">
-        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li class="social-share-li">
-      <a target="_blank" class="social-share-icon icon-qq">
-        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li class="social-share-li">
-      <a target="_blank" class="social-share-icon" href="mailto:?subject=Hexo-Theme-LiveMyLife&body=Hi,I found this website and thought you might like it https://kazumiline.github.io/en/Hexo-Theme-LiveMyLife/">
-        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
-      </a>
-    </li>
-  </ul>
-</div>
-
-<!-- css & js -->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
-<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
-
-        <!-- Sharing End -->
-        
         <hr>
 
         <!-- comments start -->
         <!-- 1. gitalk comment -->
-
-  <!-- gitalk start -->
-  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
-
-  <div id="gitalk-container"></div>
-
-  
-    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
-    <script src="/js/comment/gitalk.js"></script>
-  
-
-  <script>
-    var gitalk = new Gitalk({
-      clientID: '',
-      clientSecret: '',
-      repo: '',
-      owner: '',
-      admin: '',
-      id: 'Fri Apr 17 2020 02:34:17 GMT+0800', // Ensure uniqueness and length less than 50
-      distractionFreeMode: false, // Facebook-like distraction free mode
-      perPage: 10,
-      pagerDirection: 'last',
-      createIssueManually: false,
-      language: 'en',
-      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
-    });
-    gitalk.render('gitalk-container');
-
-    var gtFolded = () => {
-      setTimeout(function () {
-        let markdownBody = document.getElementsByClassName("markdown-body");
-        let list = Array.from(markdownBody);
-        list.forEach(item => {
-          if (item.clientHeight > 250) {
-            item.classList.add('gt-comment-body-folded');
-            item.style.maxHeight = '250px';
-            item.title = 'Click to Expand';
-            item.onclick = function () {
-              item.classList.remove('gt-comment-body-folded');
-              item.style.maxHeight = '';
-              item.title = '';
-              item.onclick = null;
-            };
-          }
-        })
-      }, 800);
-    }
-  </script>
-
-  <!-- gitalk end -->
 
 
 <!-- 2. gitment comment -->
@@ -829,19 +702,23 @@ Gitee Repo: <a target="_blank" rel="noopener" href="https://gitee.com/V_Vincen/h
 
           
           <li>
-            <a href="https://v-vincen.life/" target="_blank">V_Vincen</a>
+            <a href="https://github.com/minitotoro" target="_blank">Jay</a>
           </li>
           
           <li>
-            <a href="http://beantech.org" target="_blank">Bean Tech</a>
+            <a href="https://github.com/paddy41601" target="_blank">paddy</a>
           </li>
           
           <li>
-            <a href="http://huangxuan.me" target="_blank">Hux Blog</a>
+            <a href="https://github.com/ii64" target="_blank">ii64</a>
           </li>
           
           <li>
-            <a href="https://hexo.io/" target="_blank">Hexo</a>
+            <a href="http://www.yukion.net/" target="_blank">amemiya</a>
+          </li>
+          
+          <li>
+            <a href="https://github.com/FIREoo" target="_blank">Fire</a>
           </li>
           
         </ul>
@@ -939,6 +816,17 @@ Gitee Repo: <a target="_blank" rel="noopener" href="https://gitee.com/V_Vincen/h
 
           
 
+          
+          
+          
+          <li>
+            <a target="_blank" href="https://line.me/ti/p/~30080830">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
           
 
         </ul>
@@ -1384,20 +1272,5 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
 
 
 		
-	<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-</body>
+	</body>
 </html>
