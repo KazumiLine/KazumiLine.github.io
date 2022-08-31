@@ -7,3 +7,12 @@ $(window).scroll(function() {
   var ratio = (scrollTop / scrollAvail) * 100 + '%'
   $('#progress > .line').css('width', ratio)
 })
+
+$(document).ready(function(){
+    $(document).on('click', '.fold_hider', function(){
+        $('>.fold', this.parentNode).slideToggle();
+        $('>:first', this).toggleClass('open_title');
+    });
+    //默认情况下折叠
+    $("div.fold").css("display","none");
+});

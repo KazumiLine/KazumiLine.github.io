@@ -536,6 +536,72 @@ hr {
 blockquote {
   color: var(--blockquote-color);
 }
+.colorquote {
+  font-family: font-serif;
+  font-size: 1.1em;
+  padding: 10px 20px 10px 54px;
+  background: rgba(0,0,0,0.03);
+  border-left: 5px solid #ee6e73;
+  position: relative;
+  color: #4a4a4a;
+  margin-bottom: 1em;
+}
+.colorquote:before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: -14.5px;
+  margin-top: -12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  background-size: 16px 16px;
+  background-position: 4px 4px;
+  background-repeat: no-repeat;
+}
+.colorquote.cite:before {
+  content: "—";
+  padding: 0 0.5em;
+}
+.colorquote.footer {
+  font-size: font-size;
+  margin: line-height 0;
+  font-family: font-sans;
+}
+.colorquote.info {
+  border-color: hsl(204, 86%, 53%);
+  background-color: hsl(204, 86%, 93%);
+}
+.colorquote.info:before {
+  background-color: hsl(204, 86%, 53%);
+  background-image: url("./images/info.svg");
+}
+.colorquote.success {
+    border-color: hsl(141, 71%, 48%);
+    background-color: hsl(141, 70%, 88%);
+  }
+.colorquote.success:before {
+  background-color: hsl(141, 71%, 48%);
+  background-image: url("./images/check.svg");
+}
+.colorquote.warning {
+  border-color: hsl(48, 100%, 67%);
+  background-color: hsl(48, 100%, 91%);
+}
+.colorquote.warning:before {
+  background-color: hsl(48, 100%, 67%);
+  background-image: url("./images/question.svg");
+}
+.colorquote.danger {
+  border-color: hsl(348, 100%, 61%);
+  background-color: hsl(348, 100%, 85%);
+}
+.colorquote.danger:before {
+  background-color: hsl(348, 100%, 61%);
+  background-image: url("./images/exclamation.svg");
+}
 
 .post-container>h1,
 .post-container>h2,
@@ -979,6 +1045,19 @@ textarea.gt-header-textarea::placeholder {
   /* text-decoration: none; */
   background-color: var(--toggle-hover);
   cursor: pointer;
+}
+
+.hider_title{
+    font-family: "Microsoft Yahei";
+    cursor: pointer;
+}
+.close_title:after{
+    content: "▼";
+    float: left;
+
+}
+.open_title:after{
+    content: "▲";
 }
 
 /* ================================================ Switch color mode button End ======================================================= */

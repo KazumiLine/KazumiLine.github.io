@@ -129,7 +129,39 @@
       Hexo-Theme-LiveMyLife - kazumi&#39;s personal website
     
   </title><meta name="robots" content="noindex">
-<meta name="generator" content="Hexo 5.4.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --><style type="text/css">
+.spoiler {
+  display: inline-flex;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style><meta name="generator" content="Hexo 5.4.0"></head>
 
 
 <!-- hack iOS CSS :active style -->
@@ -232,9 +264,9 @@
           
           
           <li>
-            <a href="/categories/">
+            <a href="/archive/">
               
-              分類
+              歸檔
               
               
             </a>
@@ -243,9 +275,9 @@
           
           
           <li>
-            <a href="/archive/">
+            <a href="/categories/">
               
-              歸檔
+              分類
               
               
             </a>
@@ -464,19 +496,19 @@ Gitee 仓库地址：<a target="_blank" rel="noopener" href="https://gitee.com/V
 <p>为了方便起见，我发布了整个项目，因此您可以按照下面的说明进行操作，然后就可以轻松自定义您自己的博客！</p>
 <p>让我们开始!!!</p>
 <h3 id="安装-Node-js-和-Git">安装 Node.js 和 Git</h3>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">For Mac</span></span><br><span class="line">brew install node</span><br><span class="line">brew install git</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">For Mac</span></span><br><span class="line">brew install node</span><br><span class="line">brew install git</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>Windows：下载 &amp; 安装 Node.js。-&gt; <a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/">Node.js</a></p>
 <p>Windows：下载 &amp; 安装 Git。-&gt; <a target="_blank" rel="noopener" href="https://git-scm.com/download/win">Git</a></p>
 </blockquote>
 <h3 id="安装-Hexo">安装 Hexo</h3>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install -g hexo-cli</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install -g hexo-cli</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>什么是 <a target="_blank" rel="noopener" href="https://hexo.io/docs/">Hexo</a>?</p>
 <p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
 </blockquote>
 <h3 id="设置你的博客">设置你的博客</h3>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo init blog</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">hexo init blog</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>更多的命令 -&gt; <a target="_blank" rel="noopener" href="https://hexo.io/docs/commands">Hexo Commands</a></p>
 </blockquote>
@@ -561,7 +593,7 @@ Gitee 仓库地址：<a target="_blank" rel="noopener" href="https://gitee.com/V
 <h3 id="Anchorjs（锚点）设置">Anchorjs（锚点）设置</h3>
 <p>如果你想要更改文章目录标题前部的锚点 “❡”，则可以到 <code>layout/_partial/anchorjs.ejs</code> 目录下进行更改。如何使用 anchorjs，请参阅 <a target="_blank" rel="noopener" href="https://www.bryanbraun.com/anchorjs/#examples">AnchorJS</a> 以获取详细示例。</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Anchorjs Settings</span></span><br><span class="line"><span class="attr">anchorjs:</span> <span class="literal">true</span>    <span class="comment"># if you want to customize anchor. check out line:26 of `anchorjs.ejs`</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span>(<span class="string">&quot;//cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js&quot;</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        anchors.options = &#123;</span><br><span class="line">          visible: <span class="string">&#x27;hover&#x27;</span>,</span><br><span class="line">          placement: <span class="string">&#x27;left&#x27;</span>,</span><br><span class="line">          icon: <span class="string">&#x27;❡&#x27;</span></span><br><span class="line">          <span class="comment">// icon: &#x27;ℬ&#x27;</span></span><br><span class="line">        &#125;;</span><br><span class="line">        anchors.add().remove(<span class="string">&#x27;.intro-header h1&#x27;</span>).remove(<span class="string">&#x27;.subheading&#x27;</span>).remove(<span class="string">&#x27;.sidebar-container h5&#x27;</span>);</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">async</span>(<span class="string">&quot;//cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js&quot;</span>,<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">        anchors.<span class="property">options</span> = &#123;</span><br><span class="line">          <span class="attr">visible</span>: <span class="string">&#x27;hover&#x27;</span>,</span><br><span class="line">          <span class="attr">placement</span>: <span class="string">&#x27;left&#x27;</span>,</span><br><span class="line">          <span class="attr">icon</span>: <span class="string">&#x27;❡&#x27;</span></span><br><span class="line">          <span class="comment">// icon: &#x27;ℬ&#x27;</span></span><br><span class="line">        &#125;;</span><br><span class="line">        anchors.<span class="title function_">add</span>().<span class="title function_">remove</span>(<span class="string">&#x27;.intro-header h1&#x27;</span>).<span class="title function_">remove</span>(<span class="string">&#x27;.subheading&#x27;</span>).<span class="title function_">remove</span>(<span class="string">&#x27;.sidebar-container h5&#x27;</span>);</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
 <h3 id="博文置顶">博文置顶</h3>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># article top</span></span><br><span class="line"><span class="attr">top:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <p>Hexo-theme-livemylife 主题添加了文章顶部功能，只要在您的 markdown 笔记中添加属性<code>sticky: number</code> 配置，文章按此数字排序。<br>

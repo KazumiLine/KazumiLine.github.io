@@ -129,7 +129,39 @@
       About - kazumi&#39;s personal website
     
   </title>
-<meta name="generator" content="Hexo 5.4.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --><style type="text/css">
+.spoiler {
+  display: inline-flex;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style><meta name="generator" content="Hexo 5.4.0"></head>
 
 
 <!-- hack iOS CSS :active style -->
@@ -232,9 +264,9 @@
           
           
           <li>
-            <a href="/categories/">
+            <a href="/archive/">
               
-              CATEGORIES
+              ARCHIVES
               
               
             </a>
@@ -243,9 +275,9 @@
           
           
           <li>
-            <a href="/archive/">
+            <a href="/categories/">
               
-              ARCHIVES
+              CATEGORIES
               
               
             </a>
@@ -441,27 +473,39 @@
                 post-container
             ">
 
-      <h2 id="About-Me"><a href="#About-Me" class="headerlink" title="About Me"></a>About Me</h2><p><img src="/img/scenery/about_bg4.jpg" width="350" alt="about_bg4"></img></p>
+      <h2 id="About-Me">About Me</h2>
+<p><img src="/img/scenery/about_bg4.jpg" width="350" alt="about_bg4"></img></p>
 <blockquote>
 <p>歡迎來到本喵的網站w</p>
 </blockquote>
-<p>我目前是一名學生，興趣是寫程式，平時接各種案子，能做的都能學。<br>平時主要都接網頁、APP等開發，對人工智慧領域也相當感興趣。</p>
-<p>平時休閒活動就是打扣、睡覺，喜歡打桌球跟爬山。<br>建立這個網站是希望可以記錄一些作品與競賽。</p>
+<p>我目前是一名學生，興趣是寫程式，平時接各種案子，能做的都能學。<br>
+平時主要都接網頁、APP等開發，對人工智慧領域也相當感興趣。</p>
+<p>平時休閒活動就是打扣、睡覺，喜歡打桌球跟爬山。<br>
+建立這個網站是希望可以記錄一些作品與競賽。</p>
 <p>感謝<a target="_blank" rel="noopener" href="https://github.com/V-Vincen/hexo-theme-livemylife">大佬</a>提供一個這麼好的模板</p>
-<h2 id="My-Skills"><a href="#My-Skills" class="headerlink" title="My Skills"></a>My Skills</h2><ul>
-<li>Programing Languages<br>— Python<br>— Golang<br>— Rust<br>— Dart(Flutter)<br>— C++</li>
+<h2 id="My-Skills">My Skills</h2>
+<ul>
+<li>Programing Languages<br>
+– Python<br>
+– Golang<br>
+– Rust<br>
+– Dart(Flutter)<br>
+– C++</li>
 </ul>
-<h2 id="My-Systems"><a href="#My-Systems" class="headerlink" title="My Systems"></a>My Systems</h2><blockquote>
+<h2 id="My-Systems">My Systems</h2>
+<blockquote>
 <p><a href="www.yukion.com">雨宮防翻</a></p>
 <p><a href="www.yukion.net/tempmail/">Tempmail</a></p>
 <p><a target="_blank" rel="noopener" href="https://vps4c.yukion.net/game">遊戲腳本</a></p>
 <p><a target="_blank" rel="noopener" href="https://apps.apple.com/tw/app/gwa-connect/id1617225056?uo=4">GWA APP</a></p>
 <p><a target="_blank" rel="noopener" href="https://sp7.jcifit.com/sportbot/public/admin/">生理數據監控平台</a></p>
 </blockquote>
-<h2 id="Contact-me"><a href="#Contact-me" class="headerlink" title="Contact me"></a>Contact me</h2><blockquote>
+<h2 id="Contact-me">Contact me</h2>
+<blockquote>
 <p>Email：moumoux001@gmail.com</p>
 </blockquote>
-<h2 id="Talk-To-Me"><a href="#Talk-To-Me" class="headerlink" title="Talk To Me"></a>Talk To Me</h2><blockquote>
+<h2 id="Talk-To-Me">Talk To Me</h2>
+<blockquote>
 <p>I always say to myself :</p>
 <p>if my life is peaceful and plain sailing all the time ,</p>
 <p>it means to die in the electrocardiogram …</p>
@@ -587,6 +631,10 @@
 <div class="widget">
   <ul>
     
+    <a href="../tw/line-reverse-engineering/">
+      <li>line-reverse-engineering</li>
+    </a>
+    
     <a href="../tw/tm-robot-hackathon/">
       <li>tm-robot-hackathon</li>
     </a>
@@ -625,7 +673,7 @@
 
 <h5><a href="/archives/">archives</a></h5>
 <div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../archives/2022/08/">August 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="../archives/2021/09/">September 2021</a><span class="archive-list-count">1</span></li></ul>
+  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../archives/2022/08/">August 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="../archives/2021/09/">September 2021</a><span class="archive-list-count">1</span></li></ul>
 </div>
 
 
