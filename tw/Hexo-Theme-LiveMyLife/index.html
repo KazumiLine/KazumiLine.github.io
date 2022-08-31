@@ -128,7 +128,7 @@
     
       Hexo-Theme-LiveMyLife - kazumi&#39;s personal website
     
-  </title>
+  </title><meta name="robots" content="noindex">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 
@@ -232,9 +232,9 @@
           
           
           <li>
-            <a href="/archive/">
+            <a href="/categories/">
               
-              歸檔
+              分類
               
               
             </a>
@@ -243,9 +243,9 @@
           
           
           <li>
-            <a href="/categories/">
+            <a href="/archive/">
               
-              分類
+              歸檔
               
               
             </a>
@@ -613,7 +613,7 @@ Gitee 仓库地址：<a target="_blank" rel="noopener" href="https://gitee.com/V
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new post <span class="string">&quot;&lt;post name&gt;&quot;</span>   <span class="comment"># you can change post to another layout if you want</span></span><br><span class="line">hexo clean &amp;&amp; hexo generate   <span class="comment"># generate the static file</span></span><br><span class="line">hexo server   <span class="comment"># run hexo in local environment</span></span><br><span class="line">hexo deploy   <span class="comment"># hexo will push the static files automatically into the specific branch(gh-pages) of your repo!</span></span><br></pre></td></tr></table></figure>
 <h2 id="有一个好的体验">有一个好的体验 ^_^</h2>
 <p>如果你喜欢该主题，请 <a target="_blank" rel="noopener" href="https://github.com/V-Vincen/hexo-theme-livemylife">Star</a>！不胜感激你的 <a target="_blank" rel="noopener" href="https://github.com/V-Vincen">Follow</a>！比心！</p>
-
+<!-- flag of hidden posts -->
 
         <hr>
         <!-- Pager -->
@@ -1271,5 +1271,20 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
 
 
 		
-	</body>
+	<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
 </html>

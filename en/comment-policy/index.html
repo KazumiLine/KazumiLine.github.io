@@ -123,12 +123,12 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="https://kazumiline.github.io/tw/tm-robot-hackathon/">
+  <link rel="canonical" href="https://kazumiline.github.io/en/comment-policy/">
   <title>
     
-      tm-robot-hackathon - kazumi&#39;s personal website
+      comment-policy - kazumi&#39;s personal website
     
-  </title>
+  </title><meta name="robots" content="noindex">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 
@@ -213,7 +213,7 @@
       <div class="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="/">首頁</a>
+            <a href="/">HOME</a>
           </li>
 
           
@@ -223,7 +223,7 @@
           <li>
             <a href="/about/">
               
-              關於
+              ABOUT
               
               
             </a>
@@ -234,7 +234,7 @@
           <li>
             <a href="/categories/">
               
-              分類
+              CATEGORIES
               
               
             </a>
@@ -245,7 +245,7 @@
           <li>
             <a href="/archive/">
               
-              歸檔
+              ARCHIVES
               
               
             </a>
@@ -256,7 +256,7 @@
           <li>
             <a href="/tags/">
               
-              標簽
+              TAGS
               
               
             </a>
@@ -267,7 +267,7 @@
           
           <li>
             <a class="popup-trigger">
-              <span class="search-icon"></span>搜索</a>
+              <span class="search-icon"></span>SEARCH</a>
           </li>
           
 
@@ -326,19 +326,19 @@
     .body--light {
       /* intro-header */
       --intro-header-background-image-url-home: url('/img/header_img/newhome_bg.jpg');
-      --intro-header-background-image-url-post: url('/img/header_img/lml_bg.jpg');
-      --intro-header-background-image-url-page: url('//img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-post: url('img/scenery/about_bg.jpg');
+      --intro-header-background-image-url-page: url('/img/scenery/about_bg.jpg');
     }
     .body--dark {
       --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/newhome_bg.jpg');
-      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/lml_bg.jpg');
-      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('//img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('img/scenery/about_bg.jpg');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/scenery/about_bg.jpg');
     }
 
     header.intro-header {
        /*post*/
         background-image: var(--intro-header-background-image-url-post);
-        /* background-image: url('/img/header_img/lml_bg.jpg'); */
+        /* background-image: url('img/scenery/about_bg.jpg'); */
       
     }
 
@@ -363,20 +363,12 @@
           <div class="post-heading">
             <div class="tags">
               
-              <a class="tag" href="/tags/#Hackathon" title="Hackathon">Hackathon</a>
-              
-              <a class="tag" href="/tags/#Python" title="Python">Python</a>
-              
-              <a class="tag" href="/tags/#OpenCV" title="OpenCV">OpenCV</a>
-              
-              <a class="tag" href="/tags/#ROS" title="ROS">ROS</a>
-              
             </div>
-            <h1>tm-robot-hackathon</h1>
-            <h2 class="subheading">第一次參加機械手臂的比賽..好刺激w</h2>
+            <h1>comment-policy</h1>
+            <h2 class="subheading">文明聊天 歡樂發言</h2>
             <span class="meta">
               Posted by KazumiLin on
-              2022-08-30
+              2022-08-31
             </span>
 
 
@@ -384,11 +376,11 @@
             <!-- WordCount start -->
             <div class="blank_box"></div>
             <span class="meta">
-              Estimated Reading Time <span class="post-count">2</span> Minutes
+              Estimated Reading Time <span class="post-count">1</span> Minutes
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">699</span> In Total
+              Words <span class="post-count">157</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- WordCount end -->
@@ -457,94 +449,13 @@
       <!-- Post Container -->
       <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-        <h1>ROBOT CAN HELP</h1>
-<h3 id="人機協作系統">人機協作系統</h3>
-<h2 id="技術簡介">技術簡介</h2>
-<ul>
-<li>使用opencv影像處理提高處理速度</li>
-<li>使用YOLOV4進行AI物件辨識</li>
-<li>使用mediapipe進行手部辨識</li>
-<li>透過realtime servo操作手臂</li>
-<li>透過PYQT5建立用戶介面，使操作更加方便</li>
-</ul>
-<h2 id="提案情境">提案情境</h2>
-<p><img src="https://i.imgur.com/hqinjE9.png" alt=""></p>
-<h2 id="實際應用場景">實際應用場景</h2>
-<ul>
-<li>例如在KUKA與BMW合作的工廠中<br>
-機器手臂負責比較重的齒輪部分。<br>
-人類負責卡扣與培林軸承的放置。</li>
-<li>兩周前國際象棋機器人折斷男童手指的意外，這也有機會在協作過程中發生，若是能透過視覺即時更改移動，</li>
-</ul>
-<h2 id="架構圖">架構圖</h2>
-<pre class="mermaid">graph LR;
-    A[Camera] -- Image --> B[Hand Detector];
-    B -- Image --> C[YOLO];
-    B -- "Hand Position" --> D[Path Planer]
-    C -- "Pins Status" --> D;
-    D -- "Twist Msg" --> E[TM Robot];
-    E -- "Joint TF" --> D;
-    E -- "Gripper Image" --> C;</pre>
-<h2 id="盤面與手部找尋">盤面與手部找尋</h2>
-<pre class="mermaid">graph LR;
-    A[image] --> B[findContours];
-    A --> C[mediapipe];
-    B --> D[approxPolyDP];
-    C --HANDPOS--> E[perspectiveTransform]
-    D --cnts--> E
-    E --> F[Board & Hand]</pre>
-<h3 id="特點">特點</h3>
-<ul>
-<li>可適應多種光線環境</li>
-<li>透過投影變換使手部座標更加精準</li>
-<li>透過mediapipe可以使單張圖片辨識時間&lt;50ms</li>
-<li>能抓取手勢，做後續的延伸應用</li>
-</ul>
-<h2 id="YOLO辨識">YOLO辨識</h2>
-<p>訓練資料量/經過幾個epoch/準確率/單張圖片所需時間</p>
-<h2 id="路徑規劃">路徑規劃</h2>
-<p>此功能為獨創的演算法，我們提供了兩種模式，模擬與實際運行，可以擴充至Rviz上進行模擬與碰撞測試</p>
-<h3 id="特點-2">特點</h3>
-<ul>
-<li>對於多個放置目標，選取最佳目標，並規劃路線</li>
-<li>能夠即時更新來自相機與手臂的資訊，並即時規劃路徑</li>
-<li>當人手阻擋了目標或是離得太近，自動退開並選取新的目標</li>
-<li>使用模擬模式時，無須連接手臂便能進行開發，提供良好二次開發環境</li>
-<li>到達目的地後，從線性模式切換至P2P模式，提升放置精準度</li>
-</ul>
-<h2 id="未來展望">未來展望</h2>
-<ul>
-<li>手勢控制</li>
-<li>將辨識改為三維</li>
-<li>人與機器同時拿一件物品…等</li>
-</ul>
-<h2 id="結論">結論</h2>
-<ul>
-<li>
-<p>以視覺和獨創演算法使協作和安全等級改善。<br>
-提升人機協作配合性，共同完成任務。<br>
-透過視覺辨識即時更改路徑，同時兼顧安全與效率。</p>
-</li>
-<li>
-<p>在<strong>實用性</strong>上，不僅能提升產能、增加工作複雜度，也能在類似國際象棋機器人的事件中避免意外發生。</p>
-</li>
-<li>
-<p>在<strong>影響性</strong>上，視覺和協作的提升也能擴大需求提升的協作機器人市場，安全性的提升也能提升生產力，人機協作更流暢。</p>
-</li>
-<li>
-<p>在<strong>擴散性</strong>上，除了ROS能快速複製外，解決Bin Picking的議題也對未來許多行業有其重要性，促使更多產業使用協作機器人。</p>
-</li>
-</ul>
-
+        <h1 id="Comment-Policy"><a href="#Comment-Policy" class="headerlink" title="Comment Policy"></a>Comment Policy</h1><h3 id="We-are-a-personal-site-that-display-our-achievement-and-some-diary-One-of-the-ways-to-improve-this-collective-resource-is-having-interaction-within-the-site-through-the-use-of-comments-In-order-to-assure-quality-we-must-have-a-policy-to-fight-against-SPAM"><a href="#We-are-a-personal-site-that-display-our-achievement-and-some-diary-One-of-the-ways-to-improve-this-collective-resource-is-having-interaction-within-the-site-through-the-use-of-comments-In-order-to-assure-quality-we-must-have-a-policy-to-fight-against-SPAM" class="headerlink" title="We are a personal site that display our achievement and some diary. One of the ways to improve this collective resource is having interaction within the site through the use of comments. In order to assure quality, we must have a policy to fight against SPAM."></a>We are a personal site that display our achievement and some diary. One of the ways to improve this collective resource is having interaction within the site through the use of comments. In order to assure quality, we must have a policy to fight against SPAM.</h3><h3 id="While-we-appreciate-each-comment-if-your-comment-does-not-follow-our-comment-policy-it-will-be-removed"><a href="#While-we-appreciate-each-comment-if-your-comment-does-not-follow-our-comment-policy-it-will-be-removed" class="headerlink" title="While we appreciate each comment, if your comment does not follow our comment policy, it will be removed."></a>While we appreciate each comment, if your comment does not follow our comment policy, it will be removed.</h3><hr>
+<h3 id="這是一個個人網站，展示我的一些研究成果和一些日記。通過站內評論進行交互可以改進品質。為了保證質量，我們必須有一個反垃圾訊息的政策。"><a href="#這是一個個人網站，展示我的一些研究成果和一些日記。通過站內評論進行交互可以改進品質。為了保證質量，我們必須有一個反垃圾訊息的政策。" class="headerlink" title="這是一個個人網站，展示我的一些研究成果和一些日記。通過站內評論進行交互可以改進品質。為了保證質量，我們必須有一個反垃圾訊息的政策。"></a>這是一個個人網站，展示我的一些研究成果和一些日記。通過站內評論進行交互可以改進品質。為了保證質量，我們必須有一個反垃圾訊息的政策。</h3><h3 id="雖然我們感謝每條評論，但如果您的評論不符合我們的評論政策，它將被刪除。"><a href="#雖然我們感謝每條評論，但如果您的評論不符合我們的評論政策，它將被刪除。" class="headerlink" title="雖然我們感謝每條評論，但如果您的評論不符合我們的評論政策，它將被刪除。"></a>雖然我們感謝每條評論，但如果您的評論不符合我們的評論政策，它將被刪除。</h3><!-- flag of hidden posts -->
 
         <hr>
         <!-- Pager -->
         <ul class="pager">
           
-          
-          <li class="next">
-            <a href="/tw/xilinx-pynq-hackathon/" data-toggle="tooltip" data-placement="top" title="xilinx-pynq-hackathon">Next Post &rarr;</a>
-          </li>
           
         </ul>
 
@@ -555,7 +466,7 @@
 <div class="tip">
   <p>
     
-      如果您喜歡此篇貼文，歡迎聯絡我。 也歡迎分享給朋友，以便更多人可以參與。謝謝 ！
+      If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
     
   </p>
 </div>
@@ -588,9 +499,9 @@
     
       <aside id="sidebar">
         <div id="toc" class="toc-article">
-        <strong class="toc-title">目錄</strong>
+        <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">ROBOT CAN HELP</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E4%BA%BA%E6%A9%9F%E5%8D%94%E4%BD%9C%E7%B3%BB%E7%B5%B1"><span class="toc-nav-number">1.0.1.</span> <span class="toc-nav-text">人機協作系統</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%8A%80%E8%A1%93%E7%B0%A1%E4%BB%8B"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">技術簡介</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%8F%90%E6%A1%88%E6%83%85%E5%A2%83"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">提案情境</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AF%A6%E9%9A%9B%E6%87%89%E7%94%A8%E5%A0%B4%E6%99%AF"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">實際應用場景</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%9E%B6%E6%A7%8B%E5%9C%96"><span class="toc-nav-number">1.4.</span> <span class="toc-nav-text">架構圖</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%9B%A4%E9%9D%A2%E8%88%87%E6%89%8B%E9%83%A8%E6%89%BE%E5%B0%8B"><span class="toc-nav-number">1.5.</span> <span class="toc-nav-text">盤面與手部找尋</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E7%89%B9%E9%BB%9E"><span class="toc-nav-number">1.5.1.</span> <span class="toc-nav-text">特點</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#YOLO%E8%BE%A8%E8%AD%98"><span class="toc-nav-number">1.6.</span> <span class="toc-nav-text">YOLO辨識</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E8%B7%AF%E5%BE%91%E8%A6%8F%E5%8A%83"><span class="toc-nav-number">1.7.</span> <span class="toc-nav-text">路徑規劃</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E7%89%B9%E9%BB%9E-2"><span class="toc-nav-number">1.7.1.</span> <span class="toc-nav-text">特點</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%9C%AA%E4%BE%86%E5%B1%95%E6%9C%9B"><span class="toc-nav-number">1.8.</span> <span class="toc-nav-text">未來展望</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%B5%90%E8%AB%96"><span class="toc-nav-number">1.9.</span> <span class="toc-nav-text">結論</span></a></li></ol></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Comment-Policy"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Comment Policy</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#We-are-a-personal-site-that-display-our-achievement-and-some-diary-One-of-the-ways-to-improve-this-collective-resource-is-having-interaction-within-the-site-through-the-use-of-comments-In-order-to-assure-quality-we-must-have-a-policy-to-fight-against-SPAM"><span class="toc-nav-number">1.0.1.</span> <span class="toc-nav-text">We are a personal site that display our achievement and some diary. One of the ways to improve this collective resource is having interaction within the site through the use of comments. In order to assure quality, we must have a policy to fight against SPAM.</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#While-we-appreciate-each-comment-if-your-comment-does-not-follow-our-comment-policy-it-will-be-removed"><span class="toc-nav-number">1.0.2.</span> <span class="toc-nav-text">While we appreciate each comment, if your comment does not follow our comment policy, it will be removed.</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E9%80%99%E6%98%AF%E4%B8%80%E5%80%8B%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99%EF%BC%8C%E5%B1%95%E7%A4%BA%E6%88%91%E7%9A%84%E4%B8%80%E4%BA%9B%E7%A0%94%E7%A9%B6%E6%88%90%E6%9E%9C%E5%92%8C%E4%B8%80%E4%BA%9B%E6%97%A5%E8%A8%98%E3%80%82%E9%80%9A%E9%81%8E%E7%AB%99%E5%85%A7%E8%A9%95%E8%AB%96%E9%80%B2%E8%A1%8C%E4%BA%A4%E4%BA%92%E5%8F%AF%E4%BB%A5%E6%94%B9%E9%80%B2%E5%93%81%E8%B3%AA%E3%80%82%E7%82%BA%E4%BA%86%E4%BF%9D%E8%AD%89%E8%B3%AA%E9%87%8F%EF%BC%8C%E6%88%91%E5%80%91%E5%BF%85%E9%A0%88%E6%9C%89%E4%B8%80%E5%80%8B%E5%8F%8D%E5%9E%83%E5%9C%BE%E8%A8%8A%E6%81%AF%E7%9A%84%E6%94%BF%E7%AD%96%E3%80%82"><span class="toc-nav-number">1.0.3.</span> <span class="toc-nav-text">這是一個個人網站，展示我的一些研究成果和一些日記。通過站內評論進行交互可以改進品質。為了保證質量，我們必須有一個反垃圾訊息的政策。</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E9%9B%96%E7%84%B6%E6%88%91%E5%80%91%E6%84%9F%E8%AC%9D%E6%AF%8F%E6%A2%9D%E8%A9%95%E8%AB%96%EF%BC%8C%E4%BD%86%E5%A6%82%E6%9E%9C%E6%82%A8%E7%9A%84%E8%A9%95%E8%AB%96%E4%B8%8D%E7%AC%A6%E5%90%88%E6%88%91%E5%80%91%E7%9A%84%E8%A9%95%E8%AB%96%E6%94%BF%E7%AD%96%EF%BC%8C%E5%AE%83%E5%B0%87%E8%A2%AB%E5%88%AA%E9%99%A4%E3%80%82"><span class="toc-nav-number">1.0.4.</span> <span class="toc-nav-text">雖然我們感謝每條評論，但如果您的評論不符合我們的評論政策，它將被刪除。</span></a></li></ol></li></ol></li></ol>
         
         </div>
       </aside>
@@ -609,17 +520,9 @@
         <section>
           <!-- no hr -->
           <h5>
-            <a href="/tags/">特色標簽</a>
+            <a href="/tags/">FEATURED TAGS</a>
           </h5>
           <div class="tags">
-            
-            <a class="tag" href="/tags/#Hackathon" title="Hackathon">Hackathon</a>
-            
-            <a class="tag" href="/tags/#Python" title="Python">Python</a>
-            
-            <a class="tag" href="/tags/#OpenCV" title="OpenCV">OpenCV</a>
-            
-            <a class="tag" href="/tags/#ROS" title="ROS">ROS</a>
             
           </div>
         </section>
@@ -628,7 +531,7 @@
         <!-- Friends Blog -->
         
         <hr>
-        <h5>鏈友</h5>
+        <h5>FRIENDS</h5>
         <ul class="list-inline">
 
           
@@ -890,7 +793,7 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
             <span class="search-icon">
               <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
             </span>
-            <input autocomplete="off" placeholder="搜索..." type="text" id="local-search-input">
+            <input autocomplete="off" placeholder="SEARCH..." type="text" id="local-search-input">
           </div>
         </div>
         <div id="local-search-result"></div>

@@ -232,9 +232,9 @@
           
           
           <li>
-            <a href="/archive/">
+            <a href="/categories/">
               
-              ARCHIVES
+              CATEGORIES
               
               
             </a>
@@ -243,9 +243,9 @@
           
           
           <li>
-            <a href="/categories/">
+            <a href="/archive/">
               
-              CATEGORIES
+              ARCHIVES
               
               
             </a>
@@ -385,7 +385,7 @@
           <div class="site-heading">
             <h1>About</h1>
             <!--<hr class="small">-->
-            <span class="subheading">那些年吹过的牛逼，还有很多没有实现 ......</span>
+            <span class="subheading">每個人都有夢想，但不同的是，有的人只夢，有的人敢想。</span>
           </div>
           
         </div>
@@ -450,7 +450,7 @@
 <h2 id="Just-Me">Just Me</h2>
 <p><img src="/img/scenery/about_bg2.jpg" width="350" alt="about_bg2"></img></p>
 <blockquote>
-<p>有一种状态 叫一个人 它总是挑战语言的贫乏 只能在某首歌中找寻灵感；</p>
+<p>AAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
 <p>有一种氨基酸 叫多巴胺 你不知道它何时会在你体内产生；</p>
 <p>有一种上瘾 叫抽烟 其实你抽的只是心情 又或是寂寞；</p>
 <p>有一种态度 叫纹身 其实我们只是想与众不同；</p>
@@ -525,11 +525,11 @@
     
     
     
-    <a href="/tags/#FPGA" title="FPGA" rel="1">FPGA</a>
-    
-    
-    
     <a href="/tags/#ROS" title="ROS" rel="1">ROS</a>
+    
+    
+    
+    <a href="/tags/#FPGA" title="FPGA" rel="1">FPGA</a>
     
     
   </div>
@@ -1175,5 +1175,20 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
 
 
 		
-	</body>
+	<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
 </html>
