@@ -253,9 +253,9 @@ p.spoiler {
           
           
           <li>
-            <a href="/about/">
+            <a href="/archive/">
               
-              ABOUT
+              ARCHIVES
               
               
             </a>
@@ -264,9 +264,9 @@ p.spoiler {
           
           
           <li>
-            <a href="/archive/">
+            <a href="/about/">
               
-              ARCHIVES
+              ABOUT
               
               
             </a>
@@ -484,12 +484,94 @@ p.spoiler {
   <!-- top end -->
   
 
-  <a href="/tw/line-reverse-engineering/">
+  <a href="/tw/hexo-link-preview-block/">
     <h2 class="post-title">
-      line-reverse-engineering
+      Hexo-Link-Preview-Block
     </h2>
     <h3 class="post-subtitle">
-      
+      嘗試做了一個網址預覽畫面OAO
+    </h3>
+    <div class="post-content-preview">
+      發想
+原本只是打算讓自己在About的畫面中，插入一些自己網站的作品，希望有一個好一點的預覽。
+我就想到Twitter中，文章網址都會有一個預覽，有圖有標題有內容，還滿好看的。
+網路上找來找去，只有找到一個 hexo-tag-link-preview，恕我直言，有點醜w，而且遇到一個很尷尬的是，我有一個網站需要跳轉，因次內建的爬蟲讀不到資訊。
+於是我決定自己刻一個，不過因為對html跟css......
+    </div>
+  </a>
+  
+  <p class="post-meta" style="margin: 10px 0;">
+    Posted by KazumiLin on
+    2022-09-02
+  </p>
+  <div class="tags">
+    
+    <a href="/tags/#Hexo" title="Hexo">Hexo</a>
+    
+    <a href="/tags/#WebDesign" title="WebDesign">WebDesign</a>
+    
+  </div>
+  
+
+</div>
+<hr>
+
+<div class="post-preview">
+  
+  <!-- top start (article top hot config) -->
+  
+  <!-- top end -->
+  
+
+  <a href="/tw/go-device-binder/">
+    <h2 class="post-title">
+      Golang編譯檔激活碼驗證
+    </h2>
+    <h3 class="post-subtitle">
+      一個小工具
+    </h3>
+    <div class="post-content-preview">
+      Golang 編譯檔激活碼驗證
+發想
+隨著程式的開發，有些客戶希望可以購買檔案讓他們自己運行。
+為了防止檔案的外流與濫用，希望可以設計一個綁定系統。
+在用戶無法逆向我的編譯檔的前提下，檔案連到我的server做驗證。
+開通 寫死or給予的驗證碼後，連帶著用戶端裝置的UUID一同發到server端驗證並綁定。
+特色
+
+使用ECDH-AESCBC進行加密
+使用Hmac-SHA256進行簽章
+使用......
+    </div>
+  </a>
+  
+  <p class="post-meta" style="margin: 10px 0;">
+    Posted by KazumiLin on
+    2022-09-01
+  </p>
+  <div class="tags">
+    
+    <a href="/tags/#Golang" title="Golang">Golang</a>
+    
+  </div>
+  
+
+</div>
+<hr>
+
+<div class="post-preview">
+  
+  <!-- top start (article top hot config) -->
+  
+  <!-- top end -->
+  
+
+  <a href="/tw/line-reverse-engineering/">
+    <h2 class="post-title">
+      關於這四年我對LINE的逆向工程解析
+    </h2>
+    <h3 class="post-subtitle">
+      太多東西了...要怎麼寫啊w
     </h3>
     <div class="post-content-preview">
       ...
@@ -501,6 +583,12 @@ p.spoiler {
     2022-08-31
   </p>
   <div class="tags">
+    
+    <a href="/tags/#Golang" title="Golang">Golang</a>
+    
+    <a href="/tags/#LINE" title="LINE">LINE</a>
+    
+    <a href="/tags/#ReverseEngineering" title="ReverseEngineering">ReverseEngineering</a>
     
   </div>
   
@@ -517,7 +605,7 @@ p.spoiler {
 
   <a href="/tw/tm-robot-hackathon/">
     <h2 class="post-title">
-      tm-robot-hackathon
+      達明機器人智慧應用競賽
     </h2>
     <h3 class="post-subtitle">
       第一次參加機械手臂的比賽..好刺激w
@@ -573,7 +661,7 @@ p.spoiler {
 
   <a href="/tw/xilinx-pynq-hackathon/">
     <h2 class="post-title">
-      xilinx-pynq-hackathon
+      賽靈思PYNQ智能物聯創意設計競賽
     </h2>
     <h3 class="post-subtitle">
       比賽滿好玩的w
@@ -639,6 +727,18 @@ graph TD;
   <div class="tags">
     
     
+    <a href="/tags/#Golang" title="Golang" rel="2">Golang</a>
+    
+    
+    
+    <a href="/tags/#LINE" title="LINE" rel="1">LINE</a>
+    
+    
+    
+    <a href="/tags/#ReverseEngineering" title="ReverseEngineering" rel="1">ReverseEngineering</a>
+    
+    
+    
     <a href="/tags/#Hackathon" title="Hackathon" rel="2">Hackathon</a>
     
     
@@ -656,6 +756,14 @@ graph TD;
     
     
     <a href="/tags/#FPGA" title="FPGA" rel="1">FPGA</a>
+    
+    
+    
+    <a href="/tags/#Hexo" title="Hexo" rel="1">Hexo</a>
+    
+    
+    
+    <a href="/tags/#WebDesign" title="WebDesign" rel="1">WebDesign</a>
     
     
   </div>
@@ -738,16 +846,24 @@ graph TD;
 <div class="widget">
   <ul>
     
+    <a href="tw/hexo-link-preview-block/">
+      <li>Hexo-Link-Preview-Block</li>
+    </a>
+    
+    <a href="tw/go-device-binder/">
+      <li>Golang編譯檔激活碼驗證</li>
+    </a>
+    
     <a href="tw/line-reverse-engineering/">
-      <li>line-reverse-engineering</li>
+      <li>關於這四年我對LINE的逆向工程解析</li>
     </a>
     
     <a href="tw/tm-robot-hackathon/">
-      <li>tm-robot-hackathon</li>
+      <li>達明機器人智慧應用競賽</li>
     </a>
     
     <a href="tw/xilinx-pynq-hackathon/">
-      <li>xilinx-pynq-hackathon</li>
+      <li>賽靈思PYNQ智能物聯創意設計競賽</li>
     </a>
     
   </ul>
@@ -780,7 +896,7 @@ graph TD;
 
 <h5><a href="/archives/">archives</a></h5>
 <div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2022/08/">August 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2021/09/">September 2021</a><span class="archive-list-count">1</span></li></ul>
+  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2022/09/">September 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2022/08/">August 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2021/09/">September 2021</a><span class="archive-list-count">1</span></li></ul>
 </div>
 
 
@@ -792,8 +908,16 @@ graph TD;
 <div class="widget">
   <ul>
     
+    <a href="/categories/#LINE">
+      <li>LINE</li>
+    </a>
+    
     <a href="/categories/#Hackathon">
       <li>Hackathon</li>
+    </a>
+    
+    <a href="/categories/#WebDesign">
+      <li>WebDesign</li>
     </a>
     
   </ul>

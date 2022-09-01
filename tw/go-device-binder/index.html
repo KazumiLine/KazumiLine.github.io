@@ -123,12 +123,12 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="https://kazumiline.github.io/tw/test1/">
+  <link rel="canonical" href="https://kazumiline.github.io/tw/go-device-binder/">
   <title>
     
-      test1 - kazumi&#39;s personal website
+      Golang編譯檔激活碼驗證 - kazumi&#39;s personal website
     
-  </title><meta name="robots" content="noindex">
+  </title>
 <!-- hexo injector head_end start -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 <!-- hexo injector head_end end --><style type="text/css">
@@ -253,9 +253,9 @@ p.spoiler {
           
           
           <li>
-            <a href="/about/">
+            <a href="/archive/">
               
-              關於
+              歸檔
               
               
             </a>
@@ -264,9 +264,9 @@ p.spoiler {
           
           
           <li>
-            <a href="/archive/">
+            <a href="/about/">
               
-              歸檔
+              關於
               
               
             </a>
@@ -395,12 +395,14 @@ p.spoiler {
           <div class="post-heading">
             <div class="tags">
               
+              <a class="tag" href="/tags/#Golang" title="Golang">Golang</a>
+              
             </div>
-            <h1>test1</h1>
-            <h2 class="subheading"></h2>
+            <h1>Golang編譯檔激活碼驗證</h1>
+            <h2 class="subheading">一個小工具</h2>
             <span class="meta">
               Posted by KazumiLin on
-              2022-08-31
+              2022-09-01
             </span>
 
 
@@ -408,11 +410,11 @@ p.spoiler {
             <!-- WordCount start -->
             <div class="blank_box"></div>
             <span class="meta">
-              Estimated Reading Time <span class="post-count">3</span> Minutes
+              Estimated Reading Time <span class="post-count">2</span> Minutes
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">724</span> In Total
+              Words <span class="post-count">419</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- WordCount end -->
@@ -481,68 +483,55 @@ p.spoiler {
       <!-- Post Container -->
       <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-        <h2 id="3-算幾不等式"><a href="#3-算幾不等式" class="headerlink" title="3.算幾不等式"></a>3.算幾不等式</h2><script type="math/tex; mode=display">\normalsize已知a,b\geq0,則 \bbox[#EEF, 5px,border: 2px solid red]{\frac{a+b}{2}\geq\sqrt{ab}},\\
-\normalsize等式發生在a=b時\\
-\normalsize{\color{blue}{可推廣至n項}}:</script><script type="math/tex; mode=display">\normalsize已知a_1...a_n\geq0,\\
-\normalsize則 \bbox[#EEF, 5px,border: 2px solid red]{\frac{a_1+a_2+...a_n}{n}\geq\sqrt[n]{a_1a_2...a_n}},</script><blockquote class="colorquote warning"> <!-- warning info success danger -->
-<p><strong><em>注意：等式成立條件非常重要！！</em></strong><br>若要避免使用錯誤，請先將題目算過一遍，看看答案對不對，再想想下面的錯解為何錯</p>
-</blockquote>
-<div><div class="fold_hider"><div class="hider_title close_title">題目一</div></div><div class="fold">
-<script type="math/tex; mode=display">★{\bf\color{blue}{\normalsize{已知f(x)={x^2}+\frac{1}{x},且x>0,}}}\\
-{\bf\color{blue}{\normalsize{求f(x)的最小值為?}}}</script><blockquote class="colorquote danger"><p><strong><em>錯解：</em></strong></p>
-<script type="math/tex; mode=display">{\normalsize{\color{blue}{由算幾不等式:}}} {x^2}+\frac{1}{x}\geq2\sqrt{x^2\times\frac{1}{x}}=2\sqrt{x}，等號成立條件為\\\\
-{x^2}=\frac{1}{x}時,即x=1時\color{blue}{x=1}代入原式,得最小值為\color{blue}{2}</script></blockquote>
-
-<p><img src="https://i.imgur.com/xncUnmc.png" alt=""></p>
-<blockquote class="colorquote success"><p><strong><em>正解：</em></strong></p>
-<script type="math/tex; mode=display">\normalsize{f(x){\bf{=}}{x^2}+\frac{1}{x}{\bf{=}}{x^2}+\frac{1}{2x}+\frac{1}{2x}}\\\\
-{\bf\normalsize{\color{blue}{由三項算幾:}}{\frac{x^2+\frac{1}{2x}+\frac{1}{2x}}{3}\geq\sqrt[3]{x^2\times \frac{1}{2x}\times \frac{1}{2x}}}}
-\normalsize故\frac{x^2+\frac{1}{2x}+\frac{1}{2x}}{3}\geq\sqrt[3]{\frac{1}{4}},\\\\
-\normalsize即x^2+\frac{1}{x}\geq\color{blue}{3\sqrt[3]{\frac{1}{4}}},
-\normalsize{等式成立於\color{blue}{x=\frac{1}{\sqrt[3]{2}}}時。}</script></blockquote>
-
-</div></div>
-<div><div class="fold_hider"><div class="hider_title close_title">題目二</div></div><div class="fold">
-<script type="math/tex; mode=display">★{\bf{\normalsize\color{blue}{設x,y為正數，且9x+4y=2005，}}}{\bf\normalsize\color{blue}{則\frac{1}{x}+\frac{1}{y}的最小值為？}}</script><blockquote class="colorquote danger"><p><strong><em>錯解①：</em></strong></p>
-<script type="math/tex; mode=display">\normalsize從算幾不等式中，因為\frac{9x+4y}{2}\geq\sqrt{36xy}此時9x=4y=\frac{2005}{2}，\\\\
-故 \left\{ \begin{array}{**lr**} x=\frac{2005}{18} \\\\ y=\frac{2005}{8}\end{array} \right. 代入 \color{blue}{\frac{1}{x}+\frac{1}{y}}得最小值為\color{blue}{\frac{26}{2005}}\color{red}{(✕)}\color{red}\\\\
-{★\bf錯誤原因}:\\\\
-\normalsize解出的x,y為\frac{9x+4y}{2}\geq\sqrt{36xy}的等式成立條件，\\\\
-{\bf\color{red}{\normalsize並不代表是\frac{1}{x}+\frac{1}{y}發生最小值的結果。}}</script><p><strong><em>錯解②：</em></strong></p>
-<script type="math/tex; mode=display">\normalsize由算幾不等式： \left\{ \begin{array}{**lr**} 9x+4y\geq2\sqrt{36xy} \\\\\frac{1}{x}+\frac{1}{y}\geq2\sqrt{\frac{1}{xy}}\end{array} \right. 兩式相乘\\\\
-\normalsize (9x+4y)(\frac{1}{x}+\frac{1}{y})\geq4\sqrt{36}=24
-故\frac{1}{x}+\frac{1}{y}\geq\color{blue}{\frac{24}{2005}}\\\\
-{★\bf錯誤原因}:\\\\
-\normalsize第一個等式成立條件為9x=4y，第二個等式成立條件為x=y \\\\
-\bf\normalsize\color{red}{故兩式成立條件不相同，產生矛盾。}</script></blockquote>
-
-<blockquote class="colorquote success"><p><strong><em>正解①：</em></strong></p>
-<script type="math/tex; mode=display">\color{blue}{柯西不等式}：\\\\
-\normalsize({(\sqrt{9x})}^2+{(\sqrt{4y})}^2)(\frac{1}{({\sqrt{x}})^2}+\frac{1}{(\sqrt{y})^2})\geq(3+2)^2\\\\
-\normalsize 故\frac{1}{x}+\frac{1}{y}\geq\frac{25}{2005}=\frac{5}{401}\\\\
-\normalsize 等號成立於3x=2y時，即
-\left\{ \begin{array}{**lr**}
- \color{blue}{x= \frac{401}{3}} \\\\
-  \color{blue}{ y = \frac{401}{2}}
-        \end{array} \right.</script><p><strong><em>正解②：</em></strong></p>
-<script type="math/tex; mode=display">\color{blue}{算幾不等式}：\\\\
-\normalsize先將(9x+4y)(\frac{1}{x}+\frac{1}{y})乘開\\\\
-\normalsize=13+\frac{9x}{y}+\frac{4y}{x},再使用算幾不等式\\\\
-\normalsize得13+\frac{9x}{y}+\frac{4y}{x}\geq25\\\\
-\normalsize故\frac{1}{x}+\frac{1}{y}\geq\frac{25}{2005}=\color{blue}{\frac{5}{401}}\\\\
-\normalsize等號成立於
-\left\{ \begin{array}{**lr**}
-\color{blue}{x=\frac{401}{3}}\\\\
-\color{blue}{y=\frac{401}{2}}
-        \end{array} \right.</script></blockquote>
-
-
-</div></div><!-- flag of hidden posts -->
+        <h1>Golang 編譯檔激活碼驗證</h1>
+<h3 id="發想">發想</h3>
+<p>隨著程式的開發，有些客戶希望可以購買檔案讓他們自己運行。<br>
+為了防止檔案的外流與濫用，希望可以設計一個綁定系統。<br>
+在用戶無法逆向我的編譯檔的前提下，檔案連到我的server做驗證。<br>
+開通 寫死or給予的驗證碼後，連帶著用戶端裝置的UUID一同發到server端驗證並綁定。</p>
+<h3 id="特色">特色</h3>
+<ul>
+<li>使用ECDH-AESCBC進行加密</li>
+<li>使用Hmac-SHA256進行簽章</li>
+<li>使用硬體UUID進行綁定</li>
+<li>支援windows/linux</li>
+</ul>
+<h3 id="流程">流程</h3>
+<ul>
+<li>初次連線，交換publicKey，產生sharedKey</li>
+<li>讀取用戶裝置的硬體編號</li>
+<li>連線至server進行驗證</li>
+<li>若收到正確回覆即可開始運作</li>
+</ul>
+<h1>Getting Started</h1>
+<h2 id="Installing">Installing</h2>
+<p>To start using GJSON, install Go and run <code>go get</code>:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ go get -u github.com/KazumiLine/deviceBinder</span><br></pre></td></tr></table></figure>
+<h2 id="Setup-Server-Key">Setup Server Key</h2>
+<p>To set the key between server and client.</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deviceBinder.SetServerKey(key)</span><br></pre></td></tr></table></figure>
+<h2 id="Server-Site">Server Site</h2>
+<p>You can impl the func to your own site.</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">http.HandleFunc(<span class="string">&quot;/exchange&quot;</span>, <span class="function"><span class="keyword">func</span><span class="params">(w http.ResponseWriter, r *http.Request)</span></span> &#123;</span><br><span class="line">    <span class="keyword">if</span> r.Method == <span class="string">&quot;POST&quot;</span> &#123;</span><br><span class="line">        pubkey, err := deviceBinder.HandleExchangeECDHKey(r.FormValue(<span class="string">&quot;keyID&quot;</span>), r.FormValue(<span class="string">&quot;pubKey&quot;</span>))</span><br><span class="line">        <span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">            w.WriteHeader(http.StatusInternalServerError)</span><br><span class="line">            w.Write([]<span class="type">byte</span>(err.Error()))</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            w.Write([]<span class="type">byte</span>(pubkey))</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line">http.HandleFunc(<span class="string">&quot;/verify&quot;</span>, <span class="function"><span class="keyword">func</span><span class="params">(w http.ResponseWriter, r *http.Request)</span></span> &#123;</span><br><span class="line">    <span class="keyword">if</span> r.Method == <span class="string">&quot;POST&quot;</span> &#123;</span><br><span class="line">        <span class="comment">// client will send data like filename|deviceID</span></span><br><span class="line">        <span class="comment">// impl your own checker(data string) (err error)</span></span><br><span class="line">        respText, err := deviceBinder.HandleEncryptedMessage(r.FormValue(<span class="string">&quot;keyID&quot;</span>), r.FormValue(<span class="string">&quot;message&quot;</span>), checker)</span><br><span class="line">        <span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">            w.WriteHeader(http.StatusInternalServerError)</span><br><span class="line">            w.Write([]<span class="type">byte</span>(err.Error()))</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            w.Write([]<span class="type">byte</span>(respText))</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="Client-Site">Client Site</h2>
+<p>You can make your own verify method.<br>
+See <a target="_blank" rel="noopener" href="https://github.com/KazumiLine/deviceBinder/blob/master/client.go">client.go</a><br>
+Or Call <code>VerifyDeviceKey(Url, filename)</code> directly</p>
+<h2 id="Some-Util">Some Util</h2>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">deviceBinder.GetDeviceUUID()</span><br><span class="line"></span><br><span class="line">keyPair, err := deviceBinder.GenerateNewKeyPair() (key *KeyPair, err <span class="type">error</span>)</span><br><span class="line">keyPair.GenerateSharedKey(peersPublicKey []<span class="type">byte</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// You must generate shared key before encrypt/decrypt</span></span><br><span class="line">keyPair.EncryptMessage(message <span class="type">string</span>)</span><br><span class="line">keyPair.DecryptMessage(cipherAndSignB64 <span class="type">string</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
         <hr>
         <!-- Pager -->
         <ul class="pager">
           
+          <li class="previous">
+            <a href="/tw/hexo-link-preview-block/" data-toggle="tooltip" data-placement="top" title="Hexo-Link-Preview-Block">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/tw/line-reverse-engineering/" data-toggle="tooltip" data-placement="top" title="關於這四年我對LINE的逆向工程解析">Next Post &rarr;</a>
+          </li>
           
         </ul>
 
@@ -584,8 +573,8 @@ p.spoiler {
   <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "kazumiline";
-    var disqus_identifier = "https://kazumiline.github.io/tw/test1/";
-    var disqus_url = "https://kazumiline.github.io/tw/test1/";
+    var disqus_identifier = "https://kazumiline.github.io/tw/go-device-binder/";
+    var disqus_url = "https://kazumiline.github.io/tw/go-device-binder/";
 
     (function () {
       var dsq = document.createElement('script');
@@ -613,7 +602,7 @@ p.spoiler {
         <div id="toc" class="toc-article">
         <strong class="toc-title">目錄</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-%E7%AE%97%E5%B9%BE%E4%B8%8D%E7%AD%89%E5%BC%8F"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">3.算幾不等式</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Golang 編譯檔激活碼驗證</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E7%99%BC%E6%83%B3"><span class="toc-nav-number">1.0.1.</span> <span class="toc-nav-text">發想</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E7%89%B9%E8%89%B2"><span class="toc-nav-number">1.0.2.</span> <span class="toc-nav-text">特色</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E6%B5%81%E7%A8%8B"><span class="toc-nav-number">1.0.3.</span> <span class="toc-nav-text">流程</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">Getting Started</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Installing"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">Installing</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Setup-Server-Key"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">Setup Server Key</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Server-Site"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">Server Site</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Client-Site"><span class="toc-nav-number">2.4.</span> <span class="toc-nav-text">Client Site</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Some-Util"><span class="toc-nav-number">2.5.</span> <span class="toc-nav-text">Some Util</span></a></li></ol></li></ol>
         
         </div>
       </aside>
@@ -635,6 +624,8 @@ p.spoiler {
             <a href="/tags/">特色標簽</a>
           </h5>
           <div class="tags">
+            
+            <a class="tag" href="/tags/#Golang" title="Golang">Golang</a>
             
           </div>
         </section>

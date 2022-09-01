@@ -1060,4 +1060,73 @@ textarea.gt-header-textarea::placeholder {
     content: "▲";
 }
 
+.link-preview {
+  border-color: rgb(207, 217, 222);
+  border-radius: 16px;
+  overflow: hidden;
+  border-width: 1px; 
+  border-style: solid; 
+  display: flex; 
+  max-width: 500px; 
+  width:80%; 
+  aspect-ratio : 4 / 1; 
+  margin: 10px;
+}
+.link-preview .link-area{
+  margin-bottom: 12px; 
+  margin-top: 4px; 
+  font-weight: normal; 
+  font-size: 14px; 
+  color:#777; 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow:hidden;
+}
+.link-preview .descriptions{
+  margin-top: 10px; 
+  white-space: initial; 
+  word-wrap: break-word
+}
+.link-preview .descriptions > p{
+  margin: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.link-preview .link-content-no-img{
+  display: inline-block; 
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow:hidden; 
+  width: 80%; 
+  text-overflow: ellipsis;
+}
+.link-preview .link-content-img{
+  display: inline-block; 
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: 12px;
+  margin-right: 12px;
+  overflow:hidden; 
+  width: 80%; 
+  text-overflow: ellipsis;
+}
+.link-preview .og-image{
+  overflow:hidden; 
+  aspect-ratio : 11 / 10;
+  height: 100%; 
+  border-right: 1px solid rgb(207, 217, 222);
+}
+.link-preview .og-image img {
+  aspect-ratio : 11 / 10;
+  height: 100%; 
+  object-fit: cover; 
+  border-top-left-radius: 16px; 
+  border-bottom-left-radius: 16px; 
+  margin: 0px;
+}
 /* ================================================ Switch color mode button End ======================================================= */
