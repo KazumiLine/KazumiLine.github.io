@@ -946,9 +946,9 @@ textarea.gt-header-textarea::placeholder {
 
 /* ==================================================== highlight End =================================================== */
 /* ==================================================== Search Start =================================================== */
-.local-search-popup {
+/* .local-search-popup {
   background-color: var(--search-background-color);
-}
+} */
 
 .local-search-input-wrapper {
   background-color: var(--search-base-background-color);
@@ -1047,92 +1047,9 @@ textarea.gt-header-textarea::placeholder {
   cursor: pointer;
 }
 
-.hider_title{
-    font-family: "Microsoft Yahei";
-    cursor: pointer;
-}
-.close_title:after{
-    content: "▼";
-    float: left;
-
-}
-.open_title:after{
-    content: "▲";
-}
-
-.link-preview {
-  border-color: rgb(207, 217, 222);
-  border-radius: 16px;
-  overflow: hidden;
-  border-width: 1px; 
-  border-style: solid; 
-  display: flex; 
-  max-width: 500px; 
-  width:90%;
-  /* aspect-ratio : 4 / 1;  */
-  height: 25vw;
-  max-height: 150px;
-  margin: 10px;
-}
-
-.link-preview .og-image{
-  overflow:hidden; 
-  /* aspect-ratio : 11 / 10; */
-  width: 28vw;
-  height: 100%; 
-  max-width: 155px; 
-  border-right: 1px solid rgb(207, 217, 222);
-}
-.link-preview .og-image img {
-  height: 100%; 
-  width: 100%;
-  object-fit: cover; 
-  margin: 0px;
-}
-.link-preview .link-area{
-  margin-bottom: 12px; 
-  margin-top: 4px; 
-  font-weight: normal; 
-  font-size: 14px; 
-  color:#777; 
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow:hidden;
-}
-.link-preview .descriptions{
-  margin-top: 10px; 
-  white-space: initial; 
-  word-wrap: break-word
-}
-.link-preview .descriptions > p{
-  margin: 0px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-.link-preview .link-content-no-img{
-  display: inline-block; 
-  margin-bottom: auto;
-  margin-top: auto;
-  margin-left: 10%;
-  margin-right: 10%;
-  overflow:hidden; 
-  width: 80%; 
-  text-overflow: ellipsis;
-}
-.link-preview .link-content-img{
-  display: inline-block; 
-  margin-bottom: auto;
-  margin-top: auto;
-  margin-left: 12px;
-  margin-right: 12px;
-  overflow:hidden; 
-  width: 80%; 
-  text-overflow: ellipsis;
-}
 .mermaid {
   background: #f5f5f5 !important;
 }
+
+
 /* ================================================ Switch color mode button End ======================================================= */
