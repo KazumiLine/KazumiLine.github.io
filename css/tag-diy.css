@@ -105,7 +105,7 @@
 }
 .timenode .meta {
   position: relative;
-  color: #1f2d3d;
+  color: var(--color-default);
   font-size: 0.375rem;
   line-height: 32px;
   height: 32px;
@@ -146,6 +146,7 @@
   padding: 16px;
   border-radius: 8px;
   background: rgba(73,177,245,0.1);
+  color: var(--color-default);
 }
 .timenode .body p:first-child {
   margin-top: 0;
@@ -154,7 +155,7 @@
   margin-bottom: 0;
 }
 .timenode:hover .meta {
-  color: #1f2d3d;
+  color: var(--blockquote-color);
 }
 .timenode:hover .meta:before {
   background: rgba(255, 87, 34, 0.5);

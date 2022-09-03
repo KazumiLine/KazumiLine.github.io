@@ -170,7 +170,7 @@ a.search-result {
 #local-search-result {
   height: calc(100vh - 110px);
   overflow: auto;
-  background-color: #f6f9fc;
+  background-color: var(--search-base-background-color);
   margin-bottom: 25px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;

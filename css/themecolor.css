@@ -481,7 +481,7 @@ hr {
 .body--dark {
   --color-default: rgba(255, 255, 255, 0.8);
   --blockquote-color: #a3a3a3;
-  --post-container-a-color: #b5154b;
+  --post-container-a-color: #337ab7;
   --post-container-a-color-hover: #e91e63;
   --table-border-color: rgba(255, 255, 255, 0.8);
   /* tip */
