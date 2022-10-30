@@ -124,10 +124,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="https://kazumiline.github.io/categories/LINE/">
+  <link rel="canonical" href="https://kazumiline.github.io/tw/line-reverse-package/">
   <title>
     
-      kazumi&#39;s personal website
+      關於這四年我對LINE的逆向工程解析-封包篇 - kazumi&#39;s personal website
     
   </title>
 <!-- hexo injector head_end start -->
@@ -246,7 +246,7 @@ p.spoiler {
       <div class="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="/">HOME</a>
+            <a href="/">首頁</a>
           </li>
 
           
@@ -256,7 +256,7 @@ p.spoiler {
           <li>
             <a href="/archive/">
               
-              ARCHIVES
+              歸檔
               
               
             </a>
@@ -267,7 +267,7 @@ p.spoiler {
           <li>
             <a href="/about/">
               
-              ABOUT
+              關於
               
               
             </a>
@@ -278,7 +278,7 @@ p.spoiler {
           <li>
             <a href="/categories/">
               
-              CATEGORIES
+              分類
               
               
             </a>
@@ -289,7 +289,7 @@ p.spoiler {
           <li>
             <a href="/tags/">
               
-              TAGS
+              標簽
               
               
             </a>
@@ -300,36 +300,14 @@ p.spoiler {
           
           <li>
             <a class="popup-trigger">
-              <span class="search-icon"></span>SEARCH</a>
+              <span class="search-icon"></span>搜索</a>
           </li>
           
 
           <!-- LangSelect -->
           
           
-          <!-- LangSelect start -->
-          <!-- LangSelect -->
-<li>
-  <a id="lang-select-label"><i class="fa fa-globe"></i>
-    <span>
-      English
-    </span>
-    <select id="lang-select" data-canonical="categories/LINE/index.html">
-      
-      
-      <option value="en"  selected >
-        English
-      </option>
-      
-      <option value="tw" >
-        繁體中文
-      </option>
-      
-    </select>
-  </a>
-</li>
-
-          <!-- LangSelect end -->
+          
           
           
         </ul>
@@ -391,9 +369,9 @@ p.spoiler {
     }
 
     header.intro-header {
-       /*page*/
-        background-image: var(--intro-header-background-image-url-page);
-        /* background-image: url('/img/header_img/archive_bg2.jpg'); */
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url(''); */
       
     }
 
@@ -415,10 +393,46 @@ p.spoiler {
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
-          <div class="site-heading">
-            <h1>Kazumi&#39;s Website</h1>
-            <!--<hr class="small">-->
-            <span class="subheading">Don’t dream it, be it.</span>
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#Golang" title="Golang">Golang</a>
+              
+              <a class="tag" href="/tags/#LINE" title="LINE">LINE</a>
+              
+              <a class="tag" href="/tags/#ReverseEngineering" title="ReverseEngineering">ReverseEngineering</a>
+              
+            </div>
+            <h1>關於這四年我對LINE的逆向工程解析-封包篇</h1>
+            <h2 class="subheading">這個一直沒有太好的解法..直到最近才想出來XD</h2>
+            <span class="meta">
+              Posted by KazumiLin on
+              2022-10-31
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">1</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">0</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta" id="busuanzi_container_page_pv">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            
+
+
           </div>
           
         </div>
@@ -459,409 +473,219 @@ p.spoiler {
 	Friends Blog、
 	anchorjs、
 	) -->
-		<!-- Main Content -->
-<div class="container">
-  <div class="row">
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<script src='https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'></script>
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({theme: 'forest'});
+  }
+</script>
+
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/tw/line-reverse-apk/" data-toggle="tooltip" data-placement="top" title="關於這四年我對LINE的逆向工程解析-apk逆向篇">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/tw/line-reverse-protocol/" data-toggle="tooltip" data-placement="top" title="關於這四年我對LINE的逆向工程解析-協議篇">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
+    
+      如果您喜歡此篇貼文，歡迎聯絡我。 也歡迎分享給朋友，以便更多人可以參與。謝謝 ！
+    
+  </p>
+</div>
+<!-- tip end -->
+
+        <!-- tip end -->
+        
+
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+  <!-- disqus comment start -->
+
+  <div class="comment">
+    <div id="disqus_thread" class="disqus-thread"></div>
+  </div>
+
+  <!-- disqus embedded js code start (one page only need to embed once) -->
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "kazumiline";
+    var disqus_identifier = "https://kazumiline.github.io/tw/line-reverse-package/";
+    var disqus_url = "https://kazumiline.github.io/tw/line-reverse-package/";
+
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <!-- disqus embedded js code start end -->
+
+  <!-- disqus comment end -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">目錄</strong>
+        
+          <ol class="nav">none</ol>
+        
+        </div>
+      </aside>
     
 
-    <!-- USE SIDEBAR -->
-    <!-- Post Container -->
-    <div class="
+
+
+      <!-- Sidebar Container -->
+      <div class="
                 col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
+                col-md-10 col-md-offset-1
+                sidebar-container">
 
-      <!-- Main Content -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-0 col-md-10 col-md-offset-1">
-      <!-- 归档列表 -->
-
-      
-
-      <!-- 归档列表 -->
-      
-      <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2022">
-          <span class="tag-text">2022</span>
-        </span>
-        <ul>
-          
-          <li>
-            11-21
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/tw/line-reverse-application/" style="color: #0085a1">
-              <span>
-                關於這四年我對LINE的逆向工程解析-應用篇
-                
-                -- tw
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            10-31
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/tw/line-reverse-package/" style="color: #0085a1">
-              <span>
-                關於這四年我對LINE的逆向工程解析-封包篇
-                
-                -- tw
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            10-31
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/tw/line-reverse-apk/" style="color: #0085a1">
-              <span>
-                關於這四年我對LINE的逆向工程解析-apk逆向篇
-                
-                -- tw
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            10-30
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/tw/line-reverse-protocol/" style="color: #0085a1">
-              <span>
-                關於這四年我對LINE的逆向工程解析-協議篇
-                
-                -- tw
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            09-02
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/tw/hexo-timeline-block-md/" style="color: #0085a1">
-              <span>
-                Hexo-Time-Line
-                
-                -- tw
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            09-01
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/tw/go-device-binder/" style="color: #0085a1">
-              <span>
-                Golang編譯檔激活碼驗證
-                
-                -- tw
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            09-01
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/tw/hexo-link-preview-block/" style="color: #0085a1">
-              <span>
-                Hexo-Link-Preview
-                
-                -- tw
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            08-31
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/tw/line-reverse-engineering/" style="color: #0085a1">
-              <span>
-                關於這四年我對LINE的逆向工程解析
-                
-                -- tw
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            08-30
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/tw/tm-robot-hackathon/" style="color: #0085a1">
-              <span>
-                達明機器人智慧應用競賽
-                
-                -- tw
-                
-              </span>
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2021">
-          <span class="tag-text">2021</span>
-        </span>
-        <ul>
-          
-          <li>
-            09-30
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/tw/xilinx-pynq-hackathon/" style="color: #0085a1">
-              <span>
-                賽靈思PYNQ智能物聯創意設計競賽
-                
-                -- tw
-                
-              </span>
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-      <!-- 如果开启评论功能 -->
-      
-    </div>
-
-    <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
         <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">特色標簽</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#Golang" title="Golang">Golang</a>
+            
+            <a class="tag" href="/tags/#LINE" title="LINE">LINE</a>
+            
+            <a class="tag" href="/tags/#ReverseEngineering" title="ReverseEngineering">ReverseEngineering</a>
+            
+          </div>
+        </section>
+        
 
-<section>
-  <h5><a href="/tags/">FEATURED TAGS</a></h5>
-  <div class="tags">
-    
-    
-    <a href="/tags/#Golang" title="Golang" rel="6">Golang</a>
-    
-    
-    
-    <a href="/tags/#LINE" title="LINE" rel="5">LINE</a>
-    
-    
-    
-    <a href="/tags/#ReverseEngineering" title="ReverseEngineering" rel="5">ReverseEngineering</a>
-    
-    
-    
-    <a href="/tags/#Hackathon" title="Hackathon" rel="2">Hackathon</a>
-    
-    
-    
-    <a href="/tags/#Python" title="Python" rel="2">Python</a>
-    
-    
-    
-    <a href="/tags/#OpenCV" title="OpenCV" rel="2">OpenCV</a>
-    
-    
-    
-    <a href="/tags/#ROS" title="ROS" rel="1">ROS</a>
-    
-    
-    
-    <a href="/tags/#FPGA" title="FPGA" rel="1">FPGA</a>
-    
-    
-    
-    <a href="/tags/#Hexo" title="Hexo" rel="2">Hexo</a>
-    
-    
-    
-    <a href="/tags/#WebDesign" title="WebDesign" rel="2">WebDesign</a>
-    
-    
-  </div>
-</section>
-
-
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-  <h5><a href="/about/">ABOUT ME</a></h5>
-  <div class="short-about">
-
-    
-    <img id="avatar_pic" src="/img/avatar/kazumi.jpg" alt="avatar_pic" style="box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);" />
-    
-
-    
-    <p>Don’t worry if it doesn’t work right. If everything did, you’d be out of a job.</p>
-    
-
-    <!-- SNS Link -->
-    <ul class="list-inline">
-      
-
-      
-      <li>
-        <a target="_blank" href="https://github.com/KazumiLine">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-
-      
-      <li>
-        <a target="_blank" href="https://www.instagram.com/amemiya9181">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-      <li>
-        <a target="_blank" href="https://line.me/ti/p/~30080830">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-    </ul>
-  </div>
-</section>
-
-        <hr>
-    
-        <!-- RECENT POSTS -->
-
-<h5><a href="/">RECENT POSTS</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="../../tw/line-reverse-application/">
-      <li>關於這四年我對LINE的逆向工程解析-應用篇</li>
-    </a>
-    
-    <a href="../../tw/line-reverse-apk/">
-      <li>關於這四年我對LINE的逆向工程解析-apk逆向篇</li>
-    </a>
-    
-    <a href="../../tw/line-reverse-package/">
-      <li>關於這四年我對LINE的逆向工程解析-封包篇</li>
-    </a>
-    
-    <a href="../../tw/line-reverse-protocol/">
-      <li>關於這四年我對LINE的逆向工程解析-協議篇</li>
-    </a>
-    
-    <a href="../../tw/hexo-timeline-block-md/">
-      <li>Hexo-Time-Line</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
         <!-- Friends Blog -->
-
-<h5><a href="/">FRIENDS</a></h5>
-<ul class="list-inline">
-  
-  <li><a href="https://github.com/minitotoro" target="_blank">Jay</a></li>
-  
-  <li><a href="https://github.com/paddy41601" target="_blank">paddy</a></li>
-  
-  <li><a href="https://github.com/ii64" target="_blank">ii64</a></li>
-  
-  <li><a href="http://www.yukion.net/" target="_blank">amemiya</a></li>
-  
-  <li><a href="https://github.com/FIREoo" target="_blank">Fire</a></li>
-  
-</ul>
-
-
+        
         <hr>
-    
-        <!-- Archives -->
+        <h5>鏈友</h5>
+        <ul class="list-inline">
 
-<h5><a href="/archives/">archives</a></h5>
-<div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/11/">November 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/10/">October 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/09/">September 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/08/">August 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2021/09/">September 2021</a><span class="archive-list-count">1</span></li></ul>
-</div>
-
-
-        <hr>
-    
-        <!-- Categories -->
-
-<h5><a href="/categories/">categories</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="/categories/#LINE">
-      <li>LINE</li>
-    </a>
-    
-    <a href="/categories/#Hackathon">
-      <li>Hackathon</li>
-    </a>
-    
-    <a href="/categories/#WebDesign">
-      <li>WebDesign</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
-</div>
-
-
-    
+          
+          <li>
+            <a href="https://github.com/minitotoro" target="_blank">Jay</a>
+          </li>
+          
+          <li>
+            <a href="https://github.com/paddy41601" target="_blank">paddy</a>
+          </li>
+          
+          <li>
+            <a href="https://github.com/ii64" target="_blank">ii64</a>
+          </li>
+          
+          <li>
+            <a href="http://www.yukion.net/" target="_blank">amemiya</a>
+          </li>
+          
+          <li>
+            <a href="https://github.com/FIREoo" target="_blank">Fire</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
   </div>
-</div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
 
 
 		<!-- Footer (contains ThemeColor、viewer) -->
@@ -1046,7 +870,7 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
             <span class="search-icon">
               <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
             </span>
-            <input autocomplete="off" placeholder="SEARCH..." type="text" id="local-search-input">
+            <input autocomplete="off" placeholder="搜索..." type="text" id="local-search-input">
           </div>
         </div>
         <div id="local-search-result"></div>
